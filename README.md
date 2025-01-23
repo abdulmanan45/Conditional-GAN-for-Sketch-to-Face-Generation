@@ -104,13 +104,10 @@ person-face-sketches/
 * Use the training notebook (c_gan_train.ipynb):
     <i> # Make sure to adjust dataset paths in the script .</i>
 
-### Pre-trained Models
 
+### Usage - Generating Faces from Your Sketches
 
-We've included pre-trained model checkpoint in the training_checkpoints/ directory. You can use these to skip the training process and directly generate faces from sketches.
-#### Usage - Generating Faces from Your Sketches
-
-* Once you have a trained model (or use the pre-trained one), you can generate face photos from the test sketches!
+* Once you have a trained model, you can generate face photos from the test sketches!
 
 * Use the test generation notebook (c_gan_test_images.ipynb):
  <i> # Make sure to adjust dataset paths in the script.</i>
