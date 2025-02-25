@@ -12,9 +12,8 @@ This project is about turning sketches of faces into realistic-looking photos us
 * **U-Net Generator:** Uses a U-Net architecture for the generator network to capture details from the sketch.
 * **PatchGAN Discriminator:** Employs a PatchGAN discriminator to ensure the generated faces are realistic in patches.
 * **Person Face Sketches Dataset:** Trained and tested on the "Person Face Sketches" dataset.
-* **TensorFlow 2 Implementation:** Code is written in TensorFlow 2, making it efficient and modern.
 
-## Model Architecture - How it Works
+## Model Architecture
 
 We use two main AI models that work together:
 
@@ -22,7 +21,7 @@ We use two main AI models that work together:
 
 * **Discriminator (The Art Critic):** It looks at both real face photos and the photos created by the Generator. It tries to tell the difference between real and fake. We use a **PatchGAN discriminator** which looks at small patches of the image to make its decision.
 
-These two models are trained together in a kind of game (an adverserial game). The Generator tries to fool the Discriminator, and the Discriminator tries to get better at spotting fakes. This back-and-forth is what makes the Generator get better and better at creating realistic faces!
+These two models are trained together in an adverserial game. The Generator tries to fool the Discriminator, and the Discriminator tries to get better at spotting fakes. This back-and-forth is what makes the Generator get better and better at creating realistic faces.
 
 Here's a simplified breakdown of the networks:
 
@@ -70,7 +69,7 @@ Want to try it out or dive into the code? Here's how:
 * **Python 3.10.14**
 * **TensorFlow 2.16.1**
 * **Keras 3.3.3**
-* **Libraries:**  You'll need to install these Python libraries. You can usually do this using pip:
+* **Libraries:**  You'll need to install these Python libraries. You can do this using pip:
    ```bash
    pip install tensorflow matplotlib pathlib
    
@@ -97,8 +96,8 @@ person-face-sketches/
 
 * Clone the repository:
     ```bash
-    git clone https://github.com/abdulmanan45/Conditional-GAN-for-Sketch-to-Face-Generation
     cd [your-repository-directory]
+    git clone https://github.com/abdulmanan45/Conditional-GAN-for-Sketch-to-Face-Generation
 
 
 * Use the training notebook (c_gan_train.ipynb):
@@ -136,4 +135,10 @@ Here's a quick overview of what you'll find in this repository:
 * **Person Face Sketches Dataset**: Thanks to the creators of the Person Face Sketches dataset for providing the data for this project.
 
 * **Original cGAN and pix2pix Papers**: This project is inspired by and builds upon the foundational work in Conditional GANs and image-to-image translation, particularly the pix2pix paper.
+
+## Generated Images
+![comparison_plot_10](https://github.com/user-attachments/assets/14fc2d56-809f-4860-b051-3192df7e0122)
+![comparison_plot_8](https://github.com/user-attachments/assets/54ecdd6e-1e90-4bef-9a58-d3d3c2407af8)
+![comparison_plot_2](https://github.com/user-attachments/assets/7a648e8d-0ff9-44d7-b13e-b5e6a2bb99f0)
+
 
